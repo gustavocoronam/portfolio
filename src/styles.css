@@ -30,3 +30,7 @@ body {
   border-color: rgba(239, 239, 239, 0.403);
   transition: all .35s;
 }
+
+.hr-style {
+  color: rgb(175, 175, 175);
+}
