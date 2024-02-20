@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Manrope;
+}
+
+.copy-button {
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 1.5px;
+  border-color: rgb(246, 246, 246);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: all .35s;
+}
+
+.copy-button:hover {
+  background-color: rgba(239, 239, 239, 0.403);
+  border-color: rgba(239, 239, 239, 0.403);
+  transition: all .35s;
+}
