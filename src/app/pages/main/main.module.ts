@@ -10,10 +10,21 @@ import { SoftSkillsComponent } from './skills/soft-skills/soft-skills.component'
 import { StackComponent } from './skills/stack/stack.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [MainComponent, BusinessCardComponent, SideAComponent, SideBComponent, SkillsComponent, SoftSkillsComponent, StackComponent, ProjectsComponent, ProjectComponent],
+  declarations: [
+    MainComponent,
+    BusinessCardComponent,
+    SideAComponent,
+    SideBComponent,
+    SkillsComponent,
+    SoftSkillsComponent,
+    StackComponent,
+    ProjectsComponent,
+    ProjectComponent,
+  ],
   exports: [MainComponent],
-  imports: [CommonModule, ComponentsModule],
+  imports: [CommonModule, ComponentsModule, RouterModule],
 })
 export class MainModule {}

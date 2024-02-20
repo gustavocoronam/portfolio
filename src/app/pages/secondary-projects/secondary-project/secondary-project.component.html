@@ -1,9 +1,9 @@
 <div class="text-start mx-5">
-  <ng-container *ngFor="let project of projects">
+  <ng-container *ngFor="let secondaryProject of secondaryProjects">
     <div class="d-flex justify-content-between">
-      <h4>{{ project.title }}</h4>
+      <h4>{{ secondaryProject.title }}</h4>
       <a
-        routerLink="{{ project.url }}"
+        routerLink="{{ secondaryProject.url }}"
         style="text-decoration: none; color: grey"
         pTooltip="Go to site"
         tooltipPosition="top"
@@ -11,12 +11,12 @@
       </a>
     </div>
     <p>
-      {{ project.description }}
+      {{ secondaryProject.description }}
     </p>
     <div class="d-flex">
       <p>Stack:</p>
       <div class="button-container-stack">
-        <ng-container *ngFor="let stack of project.stack">
+        <ng-container *ngFor="let stack of secondaryProject.stack">
           <button class="button-project-stack" value="{{ stack }}">
             {{ stack }}
           </button>
